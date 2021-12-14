@@ -1,13 +1,13 @@
 import { YMaps, Map, GeolocationControl, Clusterer, Placemark } from 'react-yandex-maps';
 
 const mapSetting = {
-    center: [55.75, 37.57], 
-    zoom: 10,
+    center: [55.670777039514384, 37.56697138909254], 
+    zoom: 12,
 }
 
 const mapOptions = {
     width: '100%',
-    height: '500px'
+    height: '100%'
 }
 
 const Maps = () => (
