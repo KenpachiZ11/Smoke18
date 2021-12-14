@@ -35,7 +35,8 @@ header a:hover {
 }
 
 .image {
-  height: 640px;
+  height: 600px;
+  opacity: .6;
 }
 
 .mess {
@@ -57,8 +58,9 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 120px;
   color: rgb(123, 85, 59);
+  margin-bottom: 0px !important;
 }
 
 .box {
@@ -105,7 +107,100 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: .6;
+}
+
+.forms_map {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  /* display: flex; */
+  color: rgb(123, 85, 59);
+}
+.form h3 {
+  text-align: center;
+  margin: 20px;
+}
+.form h4 {
+  width: 200px;
+  text-align: left;
+}
+.form label {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form input {
+  outline: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+  content: '';
+  opacity: .6;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  opacity: .6;
+}
+.btn button {
+  color: rgb(123, 85, 59);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 55px;
+  border-radius: 35px;
+  transition: 1.2s ease-out;
+}
+.btn button:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(123, 85, 59, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .4s;
+}
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal__content {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  height: 400px;
+  width: 80%;
+  transform: scale(0.4);
+  transition: .5s all;
+}
+.modal__content.active {
+  transform: scale(1);
 }
 
 ::-webkit-scrollbar-button {
@@ -122,3 +217,4 @@ h2 {
 ::-webkit-scrollbar {
   width: 11px;
 }
+
