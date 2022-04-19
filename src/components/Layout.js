@@ -5,7 +5,7 @@ const Layout = () => {
         <>
             <header>
                 <Link to = '/'>Главная</Link>
-                <Link to = '/franch'>Франшиза</Link>
+                <Link to = '/menu'>Меню</Link>
                 <Link to = '/photo'>Фотоальбом</Link>
                 <Link to = '#'>+7(495)313-43-43</Link>
             </header>
