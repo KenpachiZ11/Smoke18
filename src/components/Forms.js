@@ -8,15 +8,18 @@ const Forms = () => {
         e.preventDefault()
 
         const 
-                name = document.querySelector(('[name="name"]')),
-                tel = document.querySelector(('[name="phone"]'))
+            name = document.querySelector(('[name="name"]')),
+            tel = document.querySelector(('[name="phone"]'))
 
-        const plan = {
-            name: name.value,
-            tel: tel.value
-        }
-
-        console.log(plan);    
+            if(name.value === '' || tel.value === '') {
+                alert('Поля должны быть заполнены')
+            } else {
+                const plan = {
+                    name: name.value,
+                    tel: tel.value,
+                }
+                console.log(plan); 
+            }
     }
     
     const [modalActive, setModalActive] = useState('')
@@ -36,7 +39,7 @@ const Forms = () => {
                     <div>
                         <label>
                             <h4>Ваш телефон:</h4>
-                                <input type = 'tel' name = 'phone' placeholder = 'Оставь телефончик))'></input>
+                                <input type = 'tel' name = 'phone' placeholder = 'Оставьте телефончик))'></input>
                         </label>
                     </div>
                     <div className = 'btn'>

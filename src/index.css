@@ -203,6 +203,55 @@ h2 {
   transform: scale(1);
 }
 
+.settings {
+  /* padding-top: 70px; */
+  display: flex;
+  justify-content: center;
+}
+
+.title_h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  color: rgb(123, 85, 59);
+}
+.form-input {
+  width: 400px;
+  border-radius: 20px;
+  background: rgba(128, 128, 128, 0.443);
+  padding: 5px 10px;
+}
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  gap:50px  
+}
+.res-info {
+  display: flex;
+  /* justify-content: end; */
+}
+.res-title {
+  width: 100%;
+  display: flex;
+  /* justify-content: start; */
+  align-items: center;
+  color: rgb(123, 85, 59);
+}
+.res__img {
+  width: 100px;
+  height: 100px;
+}
+.res-img {
+  display: flex;
+  /* justify-content: end; */
+}
+
+.settings {
+  margin-bottom: 40px;
+}
+
 ::-webkit-scrollbar-button {
   width:6px;
   height:0px;
